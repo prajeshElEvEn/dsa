@@ -63,12 +63,24 @@ int main()
     // is dynamic - can be implemented using arrays
     deque<int> d;
     cout << "[*] Deque:\n";
+    // add from back
     d.push_back(2);
+    // add from front
     d.push_front(1);
+    // printing deque
     for (int i : d)
     {
         cout << i << " ";
     }
+    // erase function - removes elements from-to
+    d.erase(d.begin(), d.begin() + 1);
+    cout << "\n[*] Deque after erasing first element:\n";
+    for (int i : d)
+    {
+        cout << i << " ";
+    }
+
+    cout << "\n-----------------------------------------" << endl;
 
     cout << "\n-----------------------------------------" << endl;
     cout << "by @eleven" << endl;
