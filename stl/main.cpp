@@ -145,6 +145,40 @@ int main()
     cout << "\n[*] Top element after a pop: " << q.front();
 
     cout << "\n-----------------------------------------" << endl;
+
+    // priority Queue
+    // first/front element will always be greatest
+    // it is actually max heap
+    // max heap - when taking out elements, we always get maximum element
+    priority_queue<int> maxh;
+    maxh.push(1);
+    maxh.push(5);
+    maxh.push(2);
+    maxh.push(4);
+    maxh.push(3);
+    cout << "[*] Priority Queue - Max Heap:\n";
+    int nmax = maxh.size();
+    for (int i = 0; i < nmax; i++)
+    {
+        cout << maxh.top() << " ";
+        maxh.pop();
+    }
+    // mix heap - when taking out elements, we always get minimum element
+    priority_queue<int, vector<int>, greater<int>> minh;
+    minh.push(1);
+    minh.push(5);
+    minh.push(2);
+    minh.push(4);
+    minh.push(3);
+    cout << "\n[*] Priority Queue - Min Heap:\n";
+    int nmin = minh.size();
+    for (int i = 0; i < nmin; i++)
+    {
+        cout << minh.top() << " ";
+        minh.pop();
+    }
+
+    cout << "\n-----------------------------------------" << endl;
     cout << "by @eleven" << endl;
     cout << "-----------------------------------------" << endl;
     return 0;
