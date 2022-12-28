@@ -1,6 +1,6 @@
 # DSA with C++
 
-Here lies the programmes to data structures and algorithms in C++.
+Here lies the programmes of data structures and algorithms in C++.
 
 ## Status
 
