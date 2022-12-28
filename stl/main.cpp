@@ -105,6 +105,25 @@ int main()
     }
 
     cout << "\n-----------------------------------------" << endl;
+
+    // stack
+    // lifo - last in first out
+    stack<string> s;
+    cout << "[*] Stack:\n";
+    // insertion
+    s.push("e");
+    s.push("l");
+    s.push("e");
+    s.push("v");
+    s.push("e");
+    s.push("n");
+    // displaying top element - last inserted element
+    cout << "[*] Top element: " << s.top();
+    // deleting element - deletes top element
+    s.pop();
+    cout << "\n[*] Top element after a pop: " << s.top();
+
+    cout << "\n-----------------------------------------" << endl;
     cout << "by @eleven" << endl;
     cout << "-----------------------------------------" << endl;
     return 0;
