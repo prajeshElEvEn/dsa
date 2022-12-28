@@ -108,6 +108,7 @@ int main()
 
     // stack
     // lifo - last in first out
+    // insertion/deletion at top
     stack<string> s;
     cout << "[*] Stack:\n";
     // insertion
@@ -122,6 +123,26 @@ int main()
     // deleting element - deletes top element
     s.pop();
     cout << "\n[*] Top element after a pop: " << s.top();
+
+    cout << "\n-----------------------------------------" << endl;
+
+    // queue
+    // fifo - first in first out
+    // insertion/deletion at front
+    queue<string> q;
+    cout << "[*] Queue:\n";
+    // insertion
+    q.push("e");
+    q.push("l");
+    q.push("e");
+    q.push("v");
+    q.push("e");
+    q.push("n");
+    // displaying front element
+    cout << "[*] Top element: " << q.front();
+    // deleting element - deletes front element
+    q.pop();
+    cout << "\n[*] Top element after a pop: " << q.front();
 
     cout << "\n-----------------------------------------" << endl;
     cout << "by @eleven" << endl;
