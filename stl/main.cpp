@@ -82,6 +82,28 @@ int main()
 
     cout << "\n-----------------------------------------" << endl;
 
+    // list
+    //  implemented using doubly linked list
+    // has 2 pointers - front and back
+    // cannot access element without traversal i.e., cannot use at() fn
+    list<int> l;
+    // insertion
+    l.push_back(2);
+    l.push_front(1);
+    // printing list
+    cout << "[*] List:\n";
+    for (int i : l)
+    {
+        cout << i << " ";
+    }
+    // delete element at iterator
+    l.erase(l.begin());
+    cout << "\n[*] List after deleting first element:\n";
+    for (int i : l)
+    {
+        cout << i << " ";
+    }
+
     cout << "\n-----------------------------------------" << endl;
     cout << "by @eleven" << endl;
     cout << "-----------------------------------------" << endl;
