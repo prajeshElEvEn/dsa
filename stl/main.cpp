@@ -179,6 +179,49 @@ int main()
     }
 
     cout << "\n-----------------------------------------" << endl;
+
+    // set
+    // stores unique elements - implemented using BST
+    // element can't be updated - it can be inserted/deleted
+    // returns elements in sorted order
+    // unordered set is faster than set - does not return elements in sorted order
+    set<int> svar;
+    svar.insert(4);
+    svar.insert(7);
+    svar.insert(1);
+    svar.insert(16);
+    svar.insert(1);
+    cout << "[*] Set:\n";
+    // printing set
+    for (auto i : svar)
+    {
+        cout << i << " ";
+    }
+    // accessing iterator
+    set<int>::iterator it = svar.begin();
+    // erasing 2nd element
+    it++;
+    svar.erase(it);
+    cout << "\n[*] Set after deletion of 2nd element:\n";
+    // printing set
+    for (auto i : svar)
+    {
+        cout << i << " ";
+    }
+    // element present or not
+    cout << "\n[*] Checking if 7 is present: "
+         << svar.count(7);
+    // returning iterator of an element
+    set<int>::iterator itr = svar.find(7);
+    cout << "\n[*] Element at iterator itr is: " << *itr;
+    // printing values after an iterator
+    cout << "\n[*] Printing elements from itr of 7:\n";
+    for (auto i = itr; i != svar.end(); i++)
+    {
+        cout << *i << " ";
+    }
+
+    cout << "\n-----------------------------------------" << endl;
     cout << "by @eleven" << endl;
     cout << "-----------------------------------------" << endl;
     return 0;
