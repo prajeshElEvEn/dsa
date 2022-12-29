@@ -53,6 +53,15 @@ int main()
     cout << "[*] Reversed name:\n"
          << name << endl;
     cout << "[*] Palindrome or not: " << palindrome(name, l) << endl;
+
+    // conversions
+    // upperCase to lowerCase
+    // ch - 'A' + 'a'
+    // lowerCase to upperCase
+    // ch - 'a' + 'A'
+    // character digit to integer digit
+    // ch - '0'
+
     cout << "-------------------------------------------------------------" << endl;
     cout << "by @eleven" << endl;
     cout << "-------------------------------------------------------------" << endl;
