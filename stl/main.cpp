@@ -222,6 +222,30 @@ int main()
     }
 
     cout << "\n-----------------------------------------" << endl;
+
+    // map
+    // key : value
+    // key is unique - one key points to one value only
+    // however, two keys can have same value
+    // map is sorted, unordered_map is unsorted/random
+    map<int, string> m;
+    // insertion
+    // m[key] = "value";
+    m[1] = "Hi";
+    m[2] = "Hey";
+    m[11] = "Hello";
+    m.insert({3, "Namastey"});
+    cout << "[*] Map:\n";
+    // printing map
+    for (auto i : m)
+    {
+        cout << "{ " << i.first << " : " << i.second << " }"
+             << " ";
+    }
+    // deleting element
+    // m.erase(key)
+
+    cout << "\n-----------------------------------------" << endl;
     cout << "by @eleven" << endl;
     cout << "-----------------------------------------" << endl;
     return 0;
